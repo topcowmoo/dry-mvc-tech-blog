@@ -1,39 +1,31 @@
-// const User = require('./User');
-// const Post = require('./Post');
-// const Comment = require('./Comment');
+const User = require('./User');
+const Post = require('./Post');
+const Comment = require('./Comment');
 
-// User.h
+User.hasMany(Post, {
+  foreignKey: 'user_id',
+  onUpdate: 'CASCADE',
+  onDelete: 'CASCADE',
+});
 
+User.hasMany(Comment, {
+  foreignKey: 'user_id',
+});
 
+Post.blongsTo(User, {
+  foreignKey: 'user_id',
+});
 
-// A User can have many Posts.
+Post.hasMany(Comment, {
+  foreignKey: 'post_id',
+});
 
-// A User can have many Comments.
+Comment.belongsTo(User, {
+  foreignKey: 'user_id',
+});
 
+Comment.belongsTo(Post, {
+  foreignKey: 'post_id',
+});
 
-
-// Post Model:
-
-
-
-// A Post belongs to a User.
-
-// A Post can have many Comments.
-
-
-
-// Comment Model:
-
-
-
-// A Comment belongs to a User.
-
-// A Comment belongs to a Post.
-
-
-
-
-// These associations are established using Sequelize associations like belongsTo, hasMany, or hasOne depending on the relationship between the models.
-
-
-
+module.export = { User, Post, Comment };
