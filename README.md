@@ -172,3 +172,4 @@ Deployed App on Heroku: [https://dry-mvc-tech-blog-a7183e3866d2.herokuapp.com/](
 ![GitHub language stats](https://img.shields.io/github/languages/top/topcowmoo/dry-mvc-tech-blog)
 
 ![Languages](https://img.shields.io/github/languages/count/topcowmoo/dry-mvc-tech-blog)
+
