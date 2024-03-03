@@ -1,22 +1,18 @@
 [
   {
     "title": "MySQL Shell GUI",
-    "author": "Emma Script",
     "content": "MySQL Shell GUI is a repository of MySQL Shell extensions. MySQL Shell GUI uses the functionality of MySQL Shell, but provides additional functionality such as a native interface from within Visual Studio Code."
   },
   {
     "title": "Sequelize v6",
-    "author": "Mark Up",
     "content": "Sequelize is a promise-based Node.js ORM tool for Postgres, MySQL, MariaDB, SQLite, Microsoft SQL Server, Oracle Database, Amazon Redshift and Snowflake’s Data Cloud. It features solid transaction support, relations, eager and lazy loading, read replication and more."
   },
   {
     "title": "What is Handlebars?",
-    "author": "Jay Son",
     "content": "Handlebars is a simple templating language. It uses a template and an input object to generate HTML or other text formats."
   },
   {
     "title": "Heroku Deployment",
-    "author": "Ajax Handler",
     "content": "Heroku manages app deployments with Git, the popular version control system. You do not need to be a Git expert to deploy code to Heroku, but it is helpful to learn the basics."
   }
 ]

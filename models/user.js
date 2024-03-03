@@ -32,21 +32,7 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [9, 87],
-        notEmpty: true,
-        isComplex(value) {
-          if (!/[a-zA-Z]/.test(value)) {
-            throw new Error('Password must contain at least one letter');
-          }
-          if (!/[0-9]/.test(value)) {
-            throw new Error('Password must contain at least one number');
-          }
-          if (!/[^a-zA-Z0-9]/.test(value)) {
-            throw new Error(
-              'Password must contain at least one special character',
-            );
-          }
-        },
+        len: [8],
       },
     },
   },
