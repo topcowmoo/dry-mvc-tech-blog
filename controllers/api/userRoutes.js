@@ -21,14 +21,19 @@ router.post('/login', async (req, res) => {
     const userData = await User.findOne({ where: { name: req.body.name } });
 
     if (!userData) {
-      res.status(400).json({ message: 'Incorrect name or password, please try again' });
+      res
+        .status(400)
+        .json({ message: 'Incorrect name or password, please try again' });
       return;
     }
 
-    userData.checkPassword(req.body.password)
-      .then(validPassword => {
+    userData
+      .checkPassword(req.body.password)
+      .then((validPassword) => {
         if (!validPassword) {
-          res.status(400).json({ message: 'Incorrect name or password, please try again' });
+          res
+            .status(400)
+            .json({ message: 'Incorrect name or password, please try again' });
           return;
         }
 
@@ -38,7 +43,7 @@ router.post('/login', async (req, res) => {
           res.json({ user: userData, message: 'You are now logged in!' });
         });
       })
-      .catch(err => {
+      .catch((err) => {
         res.status(500).json(err);
       });
   } catch (err) {
