@@ -77,14 +77,14 @@
   padding: 5px;
 }
 
-.postDesc {
+.postCont {
   background-color: var(--tertiary-color);
   border-style: solid;
   margin-bottom: 5px;
   padding: 2px;
 }
 
-.postDescMain {
+.postContMain {
   font-weight: 700;
 }
 

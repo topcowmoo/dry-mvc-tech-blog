@@ -14,18 +14,18 @@ User.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
     name: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
       validate: {
-        isEmail: true
+        isEmail: true,
       },
     },
     password: {
@@ -42,11 +42,13 @@ User.init(
             throw new Error('Password must contain at least one number');
           }
           if (!/[^a-zA-Z0-9]/.test(value)) {
-            throw new Error('Password must contain at least one special character');
+            throw new Error(
+              'Password must contain at least one special character',
+            );
           }
-        }
-      }
-    }
+        },
+      },
+    },
   },
   {
     hooks: {
