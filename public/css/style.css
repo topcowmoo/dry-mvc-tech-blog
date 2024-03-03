@@ -1,5 +1,116 @@
-.postBox
+:root {
+  --primary-color: #daf8e3;
+  --secondary-color: #00c2c7;
+  --tertiary-color: #97ebdb;
+  --accent-color-major: #0086ad;
+  --accent-color-minor: #005582;
+}
 
-.postBoxCont
+* {
+  background-color: var(--primary-color);
+}
 
-.postCreate
+/* Classes */
+.btnComment {
+  margin-top: 10px;
+}
+
+.commentCont {
+  background-color: var(--tertiary-color);
+  border-style: dashed;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  max-width: 75%;
+}
+
+.commentOwner {
+  font-size: 14px;
+}
+
+.commentText {
+  background-color: var(--tertiary-color);
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.formCont {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  max-width: 75%;
+}
+
+.form-group {
+  margin-top: 10px;
+}
+
+.headerRow {
+  background-color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.login {
+  margin-left: 25px;
+}
+
+.navTitle {
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+.postBox {
+  border-style: solid;
+}
+
+.postBoxCont {
+  background-color: var(--tertiary-color);
+  border-style: solid;
+  margin-top: 10px;
+}
+
+.postCreate {
+  color: var(--accent-color-minor);
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.postDesc {
+  background-color: var(--tertiary-color);
+  border-style: solid;
+  margin-bottom: 5px;
+  padding: 2px;
+}
+
+.postDescMain {
+  font-weight: 700;
+}
+
+.postDescTwo {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.postTitle {
+  color: var(--accent-color-minor);
+  text-decoration: none;
+}
+
+.signup {
+  margin-left: 25px;
+}
+
+/* Element Selectors */
+a:link {
+  color: var(--secondary-color);
+}
+
+a:hover {
+  color: var(--accent-color-major);
+}
+
+a:visited {
+  color: var(--accent-color-minor);
+}

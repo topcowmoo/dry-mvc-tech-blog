@@ -165,6 +165,7 @@ Deployed App on Heroku: [https://dry-mvc-tech-blog-a7183e3866d2.herokuapp.com/](
 - [Best README Template](https://github.com/othneildrew/Best-README-Template)
 - [Iconduck](https://iconduck.com/)
 - [Shields.io](https://shields.io/)
+- [Color Hex](https://www.color-hex.com/color-palette/74932) - Color Palette by Bdiazrodriguez
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
