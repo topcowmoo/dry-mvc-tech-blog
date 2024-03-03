@@ -89,6 +89,7 @@ Example of a POST request to create a new Tag in Insomnia:
   <span style="margin-right: 10px;"><img src="./public/images/handlebars2.png" alt="Alt text" width="45" height="45"></span>
   <span style="margin-right: 10px;"><img src="./public/images/sequelize.png" alt="Alt text" width="45" height="45"></span>
   <span style="margin-right: 10px;"><img src="./public/images/mysql.png" alt="Alt text" width="45" height="45"></span>
+  <span style="margin-right: 10px;"><img src="./public/images/apps-insomnia.png" alt="Alt text" width="45" height="45"></span>
   <span style="margin-right: 10px;"><img src="./public/images/heroku-original-wordmark.png" alt="Alt text" width="45" height="45"></span>
   <span style="margin-right: 10px;"><img src="./public/images/eslint.png" alt="Alt text" width="45" height="45"></span>
   <span><img src="./public/images/css-3.png" alt="Alt text" width="45" height="45"></span>

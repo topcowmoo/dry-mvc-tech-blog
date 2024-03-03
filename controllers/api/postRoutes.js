@@ -4,58 +4,34 @@ const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
   try {
-    const postData = await Post.create({
-      title: req.body.title,
-      content: req.body.content,
-      user_id: req.body.user_id
+    const newPost = await Post.create({
+      ...req.body,
+      user_id: req.session.user_id,
     });
 
-    res.status(200).json(postData);
+    res.status(200).json(newPost);
   } catch (err) {
     res.status(400).json(err);
   }
 });
 
-router.put('/:id', async (req, res) => {
+router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const updatedPost = await Post.update(
-      {
-        title: req.body.title,
-        content: req.body.content,
-        user_id: req.body.user_id
-      },
-      {
-        where: {
-          id: req.params.id
-        }
-      }
-    );
-
-    if (!updatedPost[0]) {
-      res.status(404).json({ message: 'Post not found' });
-      return;
-    }
-
-    res.status(200).json({ message: 'Post updated successfully' });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-router.delete('/:id', async (req, res) => {
-  try {
-    const deletedPost = await Post.destroy({
+    const postData = await Post.destroy({
       where: {
-        id: req.params.id
-      }
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
     });
 
-    if (!deletedPost) {
-      res.status(404).json({ message: 'Post not found' });
+    if (!postData) {
+      res.status(404).json({ message: 'Post ID not found' });
       return;
     }
 
-    res.status(200).json({ message: 'Post deleted successfully' });
+    const deletedPost = await Post.findByPk(req.params.id);
+
+    res.status(200).json({ message: 'Post deleted successfully', deletedPost });
   } catch (err) {
     res.status(500).json(err);
   }
