@@ -27,25 +27,16 @@ router.post('/login', async (req, res) => {
       return;
     }
 
-    userData
-      .checkPassword(req.body.password)
-      .then((validPassword) => {
-        if (!validPassword) {
-          res
-            .status(400)
-            .json({ message: 'Incorrect name or password, please try again' });
-          return;
-        }
-
-        req.session.save(() => {
-          req.session.user_id = userData.id;
-          req.session.logged_in = true;
-          res.json({ user: userData, message: 'You are now logged in!' });
-        });
-      })
-      .catch((err) => {
-        res.status(500).json(err);
-      });
+    const validPassword = userData.checkPassword(req.body.password);
+    if (!validPassword) {
+      return res
+        .status(400)
+        .json({ message: 'Incorrect name or password, please try again' });
+    }
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
+      return res.json({ user: userData, message: 'You are now logged in!' });
   } catch (err) {
     res.status(400).json(err);
   }

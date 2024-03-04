@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const { Comment } = require('../../models');
-const withAuth = require('../../utils/auth');
+const { apiAuth } = require('../../utils/auth');
 
 router.get('/', (req, res) => {
   Comment.findAll({})
-    .then(commentData => res.json(commentData))
-    .catch(err => {
+    .then((commentData) => res.json(commentData))
+    .catch((err) => {
       console.log(err);
       res.status(500).json(err);
     });
@@ -14,11 +14,11 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   Comment.findAll({
     where: {
-      id: req.params.id
-    }
+      id: req.params.id,
+    },
   })
-    .then(commentData => res.json(commentData))
-    .catch(err => {
+    .then((commentData) => res.json(commentData))
+    .catch((err) => {
       console.log(err);
       res.status(500).json(err);
     });
@@ -36,7 +36,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.delete('/:id', withAuth, async (req, res) => {
+router.delete('/:id', apiAuth, async (req, res) => {
   try {
     const commentData = await Comment.destroy({
       where: {
