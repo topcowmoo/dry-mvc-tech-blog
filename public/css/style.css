@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #daf8e3;
+  --primary-color: #e3edf1;
   --secondary-color: #00c2c7;
   --tertiary-color: #97ebdb;
   --accent-color-major: #0086ad;
@@ -7,7 +7,10 @@
 }
 
 * {
-  background-color: var(--primary-color);
+  background-color: white;
+  font-family: 'Kalam', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Classes */
@@ -61,10 +64,11 @@
 
 .postBox {
   border-style: solid;
+  margin: 1rem;
 }
 
 .postBoxCont {
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   border-style: solid;
   margin-top: 10px;
 }
@@ -78,7 +82,7 @@
 }
 
 .postCont {
-  background-color: var(--tertiary-color);
+  background-color: var(--primary-color);
   border-style: solid;
   margin-bottom: 5px;
   padding: 2px;
@@ -112,5 +116,5 @@ a:hover {
 }
 
 a:visited {
-  color: var(--accent-color-minor);
+  color: var(--accent-color-minor) !important;
 }
