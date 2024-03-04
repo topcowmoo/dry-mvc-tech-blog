@@ -21,22 +21,21 @@ router.post('/login', async (req, res) => {
     const userData = await User.findOne({ where: { name: req.body.name } });
 
     if (!userData) {
-      res
-        .status(400)
-        .json({ message: 'Incorrect name or password, please try again' });
+      res.status(400).json({ message: 'Incorrect name or password, please try again' });
       return;
     }
 
     const validPassword = userData.checkPassword(req.body.password);
+
     if (!validPassword) {
-      return res
-        .status(400)
-        .json({ message: 'Incorrect name or password, please try again' });
+      return res.status(400).json({ message: 'Incorrect name or password, please try again' });
     }
+
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       return res.json({ user: userData, message: 'You are now logged in!' });
+    });
   } catch (err) {
     res.status(400).json(err);
   }
