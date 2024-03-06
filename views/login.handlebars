@@ -6,8 +6,9 @@
         <input
           class='form-input'
           type='text'
-          placeholder='Name'
-          id='name-login'
+          placeholder='Username'
+          id='username-login'
+          style='width: 300px;'
         />
       </div>
       <div class='form-group'>
@@ -16,16 +17,23 @@
           type='password'
           placeholder='Password'
           id='password-login'
+          style='width: 300px;'
         />
       </div>
       <div class='form-group'>
-        <button class="btn" style="background-color: #005582; color: white;" type="submit">Login</button>
+        <button
+          class='btn'
+          style='background-color: #005582; color: white; width: 300px;'
+          type='submit'
+        >Login</button>
       </div>
-      <div>
-        <a href='/signUp'>Sign Up Instead</a>
+      <div class='form-group' style='margin-top: 15px;'>
+        <a href='/signup'>Sign Up For Free</a>
       </div>
     </form>
+    <div id='login-failed' style='display: none; color: red;'>Login failed.
+      Please try again</div>
   </div>
 </div>
 
-<script src='./js/login.js'></script>
+<script src='/js/login.js'></script>

@@ -2,16 +2,16 @@
   {
     "post_id": 2,
     "user_id": 3,
-    "content": "Thank you for explaining this."
+    "comment": "Thank you for explaining this."
   },
   {
     "post_id": 2,
     "user_id": 1,
-    "content": "I am glad you liked the post."
+    "comment": "I am glad you liked the post."
   },
   {
     "post_id": 4,
     "user_id": 2,
-    "content": "I love this subject."
+    "comment": "I love this subject."
   }
 ]

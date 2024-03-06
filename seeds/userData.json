@@ -1,22 +1,22 @@
 [
   {
-    "name": "Jay",
+    "username": "Jay",
     "email": "json@fakesrus.com",
-    "password": "password35657"
+    "password": "password1234"
   },
   {
-    "name": "Mark",
+    "username": "Mark",
     "email": "mup@timhortons.com",
-    "password": "password3565754"
+    "password": "password1234"
   },
   {
-    "name": "Ajax",
+    "username": "Ajax",
     "email": "ahandler@smart.com",
-    "password": "password3565732435"
+    "password": "password1234"
   },
   {
-    "name": "Emma",
+    "username": "Emma",
     "email": "escript@reddog.com",
-    "password": "password35657322454"
+    "password": "password1234"
   }
 ]

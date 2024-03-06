@@ -7,10 +7,14 @@
 }
 
 * {
-  background-color: white;
+  background-color: whitesmoke;
   font-family: 'Kalam', sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+h2 {
+  padding-top: 1rem;
 }
 
 /* Classes */
@@ -57,6 +61,8 @@
   margin-left: 25px;
 }
 
+
+
 .navTitle {
   font-size: xx-large;
   font-weight: 900;
@@ -72,29 +78,30 @@
   border-style: solid;
   margin-top: 10px;
 }
-
+x
 .postCreate {
   color: var(--accent-color-minor);
-  font-size: 12px;
-  font-style: italic;
+  font-size: 14px;
+  /* font-style: italic; */
   font-weight: bold;
   padding: 5px;
 }
 
 .postCont {
   background-color: var(--primary-color);
-  border-style: solid;
-  margin-bottom: 5px;
+  border-style: double;
+  margin-bottom: 1rem;
   padding: 2px;
 }
 
 .postContMain {
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .postDescTwo {
   font-size: 25px;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .postTitle {
@@ -117,4 +124,12 @@ a:hover {
 
 a:visited {
   color: var(--accent-color-minor) !important;
+}
+
+.navbar-toggler-icon {
+  background-color: black;
+}
+
+.navbar-toggler {
+  background-color: black;
 }

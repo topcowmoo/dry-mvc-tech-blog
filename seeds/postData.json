@@ -1,5 +1,9 @@
 [
   {
+    "title": "Heroku Deployment",
+    "content": "Heroku manages app deployments with Git, the popular version control system. You do not need to be a Git expert to deploy code to Heroku, but it is helpful to learn the basics."
+  },
+  {
     "title": "MySQL Shell GUI",
     "content": "MySQL Shell GUI is a repository of MySQL Shell extensions. MySQL Shell GUI uses the functionality of MySQL Shell, but provides additional functionality such as a native interface from within Visual Studio Code."
   },
@@ -10,9 +14,5 @@
   {
     "title": "What is Handlebars?",
     "content": "Handlebars is a simple templating language. It uses a template and an input object to generate HTML or other text formats."
-  },
-  {
-    "title": "Heroku Deployment",
-    "content": "Heroku manages app deployments with Git, the popular version control system. You do not need to be a Git expert to deploy code to Heroku, but it is helpful to learn the basics."
   }
 ]

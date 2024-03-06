@@ -5,7 +5,5 @@ module.exports = {
     } else {
       return '';
     }
-  }
+  },
 };
-
-
