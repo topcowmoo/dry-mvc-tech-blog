@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
 
+// GET to display all users
 router.get('/', async (req, res) => {
   try {
     const users = await User.findAll({
@@ -14,6 +15,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+// GET to display user by id
 router.get('/:id', async (req, res) => {
   try {
     const user = await User.findByPk(req.params.id, {
@@ -30,6 +32,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+// POST to create user
 router.post('/signup', async (req, res) => {
   try {
     const usernameExists = await User.findOne({
@@ -47,13 +50,14 @@ router.post('/signup', async (req, res) => {
       };
       await User.create(newUser);
 
-      res.status(200).json({ message: 'Successfully Signed Up' });
+      res.status(200).json({ message: 'Successfully signed up' });
     }
   } catch (err) {
     res.status(500).json({ error: 'Failed to signup' });
   }
 });
 
+// POST to login
 router.post('/login', async (req, res) => {
   try {
     const user = await User.findOne({
@@ -76,7 +80,6 @@ router.post('/login', async (req, res) => {
       req.session.user_id = user.id;
       req.session.username = user.username;
       req.session.loggedIn = true;
-
       res.json({ message: 'Successfully logged in', user });
     });
   } catch (err) {
@@ -84,6 +87,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
+// POST to logout
 router.post('/logout', (req, res) => {
   try {
     if (req.session.loggedIn) {

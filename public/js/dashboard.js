@@ -38,6 +38,11 @@ const delButtonHandler = async (event) => {
   }
 };
 
+const logoutButtonHandler = async (event) => {
+  event.preventDefault();
+  alert('logged button clicked');
+};
+
 document
   .querySelector('.new-post-form')
   .addEventListener('submit', newFormHandler);
@@ -45,3 +50,7 @@ document
 document
   .querySelector('.post-list')
   .addEventListener('click', delButtonHandler);
+
+document
+  .querySelector('#logout')
+  .addEventListener('click', logoutButtonHandler);

@@ -1,3 +1,11 @@
+/* Global styles */
+* {
+  font-family: 'Kalam', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Root variables */
 :root {
   --primary-color: #e3edf1;
   --secondary-color: #00c2c7;
@@ -6,130 +14,74 @@
   --accent-color-minor: #005582;
 }
 
-* {
-  background-color: whitesmoke;
-  font-family: 'Kalam', sans-serif;
+/* Navigation bar */
+.nav-bar {
+  background-color: var(--background-color);
+  color: var(--dark-accent-color);
+  display: flex;
+  padding: 1% 5%;
+  justify-content: space-between;
+  font-size: 20px;
   font-weight: 400;
-  font-style: normal;
 }
 
-h2 {
-  padding-top: 1rem;
+.nav-bar ul {
+  display: flex;
+  width: 30%;
+  margin-top: 0.6%;
+  margin-bottom: 0.6%;
+  padding-left: 0px;
+  text-align: center;
+  list-style-type: none;
 }
 
-/* Classes */
-.btnComment {
-  margin-top: 10px;
+.nav-bar ul li {
+  margin: 4%;
 }
 
-.commentCont {
-  background-color: var(--tertiary-color);
-  border-style: dashed;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  max-width: 75%;
+.nav-bar ul li:hover {
+  cursor: pointer;
+  color: var(--accent-color);
 }
 
-.commentOwner {
-  font-size: 14px;
+/* Submit button */
+.submit {
+  width: 30%;
+  padding: 2%;
+  margin-left: 0%;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
 }
 
-.commentText {
-  background-color: var(--tertiary-color);
-  font-weight: bold;
-  padding-top: 10px;
+.submit:hover {
+  cursor: pointer;
+  background-color: var(---secondary-color);
 }
 
-.formCont {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  max-width: 75%;
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--dark-accent-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1%;
+  padding-top: 2%;
 }
 
-.form-group {
-  margin-top: 10px;
-}
-
-.headerRow {
-  background-color: var(--primary-color);
-  margin-bottom: 10px;
-}
-
-.login {
-  margin-left: 25px;
-}
-
-
-
-.navTitle {
-  font-size: xx-large;
-  font-weight: 900;
-}
-
-.postBox {
-  border-style: solid;
-  margin: 1rem;
-}
-
-.postBoxCont {
-  background-color: var(--secondary-color);
-  border-style: solid;
-  margin-top: 10px;
-}
-x
-.postCreate {
-  color: var(--accent-color-minor);
-  font-size: 14px;
-  /* font-style: italic; */
-  font-weight: bold;
-  padding: 5px;
-}
-
-.postCont {
-  background-color: var(--primary-color);
-  border-style: double;
-  margin-bottom: 1rem;
-  padding: 2px;
-}
-
-.postContMain {
+footer h4 {
+  margin-top: 0;
+  font-size: 20px;
   font-weight: 400;
-  font-size: 18px;
 }
 
-.postDescTwo {
-  font-size: 25px;
-  /* font-style: italic; */
-}
-
-.postTitle {
-  color: var(--accent-color-minor);
+footer a {
+  margin: 1%;
   text-decoration: none;
+  color: var(--dark-accent-color);
 }
 
-.signup {
-  margin-left: 25px;
-}
-
-/* Element Selectors */
-a:link {
-  color: var(--secondary-color);
-}
-
-a:hover {
-  color: var(--accent-color-major);
-}
-
-a:visited {
-  color: var(--accent-color-minor) !important;
-}
-
-.navbar-toggler-icon {
-  background-color: black;
-}
-
-.navbar-toggler {
-  background-color: black;
-}

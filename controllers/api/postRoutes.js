@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Post, User, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+// GET display all posts
 router.get('/', async (req, res) => {
   try {
     const posts = await Post.findAll({
@@ -14,14 +15,13 @@ router.get('/', async (req, res) => {
   }
 });
 
+// GET route to display post by id and comments
 router.get('/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
         { model: User, attributes: ['username'] },
-        {
-          model: Comment,
-          include: [{ model: User, attributes: ['username'] }],
+        { model: Comment, include: [{ model: User, attributes: ['username'] }],
         },
       ],
     });
@@ -36,6 +36,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+// POST to add new post
 router.post('/', withAuth, async (req, res) => {
   try {
     const newPost = await Post.create({
@@ -48,6 +49,7 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+// PUT to edit post
 router.put('/:id', withAuth, async (req, res) => {
   try {
     const [updatedRowsCount] = await Post.update(req.body, {
@@ -66,6 +68,7 @@ router.put('/:id', withAuth, async (req, res) => {
   }
 });
 
+// DELETE route to delete post
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const existingPost = await Post.findByPk(req.params.id);

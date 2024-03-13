@@ -11,6 +11,7 @@ const loginHandler = async (event) => {
       headers: { 'Content-Type': 'application/json' },
     });
 
+    // response.ok --> response with a status of 200
     if (response.ok) {
       document.location.replace('/dashboard');
     } else {
