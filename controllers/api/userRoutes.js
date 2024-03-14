@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
 
-// GET to display all users
+// GET route to display all users
 router.get('/', async (req, res) => {
   try {
     const users = await User.findAll({
@@ -32,7 +32,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// POST to create user
+// POST route to create new user
 router.post('/signup', async (req, res) => {
   try {
     const usernameExists = await User.findOne({
@@ -57,7 +57,7 @@ router.post('/signup', async (req, res) => {
   }
 });
 
-// POST to login
+// POST route to login
 router.post('/login', async (req, res) => {
   try {
     const user = await User.findOne({
@@ -80,14 +80,14 @@ router.post('/login', async (req, res) => {
       req.session.user_id = user.id;
       req.session.username = user.username;
       req.session.loggedIn = true;
-      res.json({ message: 'Successfully logged in', user });
+      res.json({ message: 'Successfully logged in' });
     });
   } catch (err) {
     res.status(500).json({ error: 'Failed to login' });
   }
 });
 
-// POST to logout
+// POST route to logout
 router.post('/logout', (req, res) => {
   try {
     if (req.session.loggedIn) {

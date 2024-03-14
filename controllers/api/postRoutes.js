@@ -5,23 +5,26 @@ const withAuth = require('../../utils/auth');
 // GET display all posts
 router.get('/', async (req, res) => {
   try {
-    const posts = await Post.findAll({
+    const postData = await Post.findAll({
       include: [{ model: User }, { model: Comment }],
     });
 
-    res.status(200).json(posts);
+    res.status(200).json(postData);
   } catch (err) {
+    console.error(err);
     res.status(500).json(err);
   }
 });
 
-// GET route to display post by id and comments
+// GET route to display post id with comments
 router.get('/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
         { model: User, attributes: ['username'] },
-        { model: Comment, include: [{ model: User, attributes: ['username'] }],
+        {
+          model: Comment,
+          include: [{ model: User, attributes: ['username'] }],
         },
       ],
     });
@@ -36,7 +39,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// POST to add new post
+// Create a new post with user logged in
 router.post('/', withAuth, async (req, res) => {
   try {
     const newPost = await Post.create({
@@ -49,19 +52,18 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-// PUT to edit post
+// Update existing post with user logged in
 router.put('/:id', withAuth, async (req, res) => {
   try {
-    const [updatedRowsCount] = await Post.update(req.body, {
+    const updatedPost = await Post.update(req.body, {
       where: { id: req.params.id },
     });
-    if (updatedRowsCount === 0) {
-      res.status(404).json({ message: 'No post found with that id' });
+
+    if (!updatePost[0]) {
+      res.status(404).json({ message: 'No post found' });
       return;
     }
-    const updatedPost = await Post.findOne({
-      where: { id: req.params.id },
-    });
+
     res.status(200).json(updatedPost);
   } catch (err) {
     res.status(500).json(err);
@@ -71,16 +73,18 @@ router.put('/:id', withAuth, async (req, res) => {
 // DELETE route to delete post
 router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const existingPost = await Post.findByPk(req.params.id);
-    if (!existingPost) {
-      res.status(404).json({ error: 'Post Not Found' });
-      return;
-    }
     await Comment.destroy({
       where: { post_id: req.params.id },
     });
 
-    const deletedPost = await existingPost.destroy();
+    const deletedPost = await Post.destroy({
+      where: { post_id: req.params.id },
+    });
+    if (!deletedPost) {
+      res.status(404).json({ message: 'No post found' });
+      return;
+    }
+
     res.status(200).json(deletedPost);
   } catch (err) {
     res.status(500).json(err);
