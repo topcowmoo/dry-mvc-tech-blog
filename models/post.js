@@ -5,17 +5,17 @@ class Post extends Model {}
 
 Post.init(
   {
-    id: {
+    post_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
+    post_title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    content: {
+    post_content: {
       type: DataTypes.TEXT,
       allowNull: false,
     },
@@ -24,8 +24,8 @@ Post.init(
       references: {
         model: 'user',
         key: 'id',
-      }
-    }
+      },
+    },
   },
   {
     sequelize,
