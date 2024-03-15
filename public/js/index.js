@@ -22,6 +22,12 @@ var loginBtnHandler = (event) => {
   document.location.replace('/login');
 };
 
+// Go to signup page
+var signupBtnHandler = (event) => {
+  event.preventDefault();
+  document.location.replace('/signup');
+};
+
 // Go to a new page to comment on a post you are seeing
 var postCardHandler = (event) => {
   event.preventDefault();
@@ -53,14 +59,22 @@ var deletePostHandler = async (event) => {
 
 // Assign elements to handlers
 document.getElementById('homebtn').addEventListener('click', homeHandler);
-document.getElementById('dashboardbtn').addEventListener('click', dashboardHandler);
+document
+  .getElementById('dashboardbtn')
+  .addEventListener('click', dashboardHandler);
 if (document.getElementById('postbtn')) {
   document.getElementById('postbtn').addEventListener('click', newPostHandler);
 }
 if (document.getElementById('loginbtn')) {
-  document.getElementById('loginbtn').addEventListener('click', loginBtnHandler);
+  document
+    .getElementById('loginbtn')
+    .addEventListener('click', loginBtnHandler);
+}
+if (document.getElementById('signupbtn')) {
+  document
+    .getElementById('signupbtn')
+    .addEventListener('click', signupBtnHandler);
 }
 document.querySelectorAll('.card-title').forEach((element) => {
   element.addEventListener('click', postCardHandler);
 });
-

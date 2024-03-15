@@ -35,4 +35,6 @@ const registerHandler = async (event) => {
 };
 
 // Attach register handler function to submit event of the registration form
-document.querySelector('#create-profile-form').addEventListener('submit', registerHandler);
+document
+  .querySelector('#create-profile-form')
+  .addEventListener('submit', registerHandler);
