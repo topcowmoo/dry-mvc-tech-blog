@@ -8,10 +8,16 @@
 /* Root variables */
 :root {
   --primary-color: #e3edf1;
-  --secondary-color: #00c2c7;
   --tertiary-color: #1a8cb8;
   --accent-color-major: #0086ad;
   --accent-color-minor: #005582;
+}
+
+body {
+  background-image: url(../images/Untitled-3.png);
+  background-size: cover;
+  background-attachment: fixed;
+  
 }
 
 /* Navigation bar */
