@@ -1,24 +1,32 @@
-<div>
-  <h2 class="signup">Sign Up</h2>
-
-  <form class="form signup-form">
-    <div class="form-group">
-      <input class="form-input" type="text" placeholder="Username" id="username-signup" />
+{{!Sign Up Form}}
+<link rel='stylesheet' href='/css/signup.css' />
+<div class='create-profile'>
+  <h2>Sign Up:</h2>
+  <form id='create-profile-form'>
+    <div class='form-element'>
+      <label for='username'>Create Username:</label>
+      <input type='text' id='create-username' name='username' /><br />
     </div>
-   <div class="form-group">
-      <input class="form-input" type="email" placeholder="Email" id="email-signup" />
+    <div class='form-element'>
+      <label for='email'>Enter Email:</label>
+      <input type='email' id='email' name='email' /><br />
     </div>
-    <div class="form-group">
-      <input class="form-input" type="password" placeholder="Password" id="password-signup" />
+    <div class='form-element'>
+      <label for='password'>Create Password:</label>
+      <input type='password' id='create-password' name='password' /><br />
     </div>
-
-    <div class="form-group">
-      <button class="btn" style="background-color: #005582; color: white;" type="submit">Signup</button>
-    </div>
+    <input type='submit' value='Create Profile' class='submit' />
+    <p
+      id='register-failed'
+      class='message register-failed'
+      style='display:none'
+    >Email or username already exists</p>
+    <p
+      id='register-success'
+      class='message register-success'
+      style='display:none'
+    >New user created! Now login please!</p>
   </form>
-  <div>
-    <a href="/login">Login Instead</a>
-  </div>
 </div>
 
-<script src="/js/signup.js"></script>
+<script src='/js/signup.js'></script>
