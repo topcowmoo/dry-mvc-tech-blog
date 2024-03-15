@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/topcowmoo/dry-mvc-tech-blog">
-    <img src="./public/images/SMfavicon-32x32.png" alt="Logo" width="70" height="70">
+    <!-- <img src="./public/images/SMfavicon-32x32.png" alt="Logo" width="70" height="70"> -->
   </a>
 
 <h3 align="center">Dry MVC Tech Blog</h3>
