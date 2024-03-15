@@ -1,33 +1,10 @@
-{{#each posts as |post|}}
+{{! Homepage }}
+<section class='dashboard'>
+  <h2 class='dashboard-head'>Check Out The Latest Posts!</h2>
 
-  <div class='row'>
-
-    <div class='container postBox'>
-      <div class='row justify-content-center headerRow'>
-        <div class='col-8'>
-          <h2>
-            <a
-              class='postTitle text-uppercase'
-              href='/post/{{post.id}}'
-            >{{post.title}}</a>
-          </h2>
-        </div>
-
-        <div class='col-4'>
-          <p class='postCreate text-right'>Posted by
-            {{post.user.username}}
-            on
-            {{format_date post.createdAt}}
-          </p>
-        </div>
-      </div>
-      <div class='postCont'>
-        <p class='postContMain'>
-          {{post.content}}
-        </p>
-      </div>
-    </div>
-
+  <div class='posts'>
+    {{#each posts}}
+      {{> homePostDetails }} 
+    {{/each}}
   </div>
-
-{{/each}}
+</section>

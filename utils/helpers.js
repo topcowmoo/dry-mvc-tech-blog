@@ -1,9 +1,5 @@
 module.exports = {
-  format_date: (date) => {
-    if (date) {
-      return date.toLocaleDateString();
-    } else {
-      return '';
-    }
-  },
+  format_date: (date) =>{
+    return new Date(date).toLocaleString('en-US');
+  }
 };
