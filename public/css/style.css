@@ -9,20 +9,22 @@
 :root {
   --primary-color: #e3edf1;
   --secondary-color: #00c2c7;
-  --tertiary-color: #97ebdb;
+  --tertiary-color: #1a8cb8;
   --accent-color-major: #0086ad;
   --accent-color-minor: #005582;
 }
 
 /* Navigation bar */
 .nav-bar {
-  background-color: var(--background-color);
-  color: var(--dark-accent-color);
   display: flex;
+  background-color: #e3edf1;
   padding: 1% 5%;
   justify-content: space-between;
   font-size: 20px;
   font-weight: 400;
+  margin: 0;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .nav-bar ul {
@@ -61,27 +63,216 @@
 
 /* Footer */
 footer {
-  position: absolute;
+  position: fixed;
+  background-color: #e3edf1;
   bottom: 0;
   width: 100%;
-  background-color: var(--background-color);
-  color: var(--dark-accent-color);
-  text-align: center;
+  color: var(--tertiary-color);
+  text-align: left;
   display: flex;
   flex-direction: column;
   padding-bottom: 1%;
   padding-top: 2%;
+  padding-left: 1%;
 }
 
 footer h4 {
   margin-top: 0;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
+  color: var(--accent-color-minor);
 }
 
 footer a {
-  margin: 1%;
-  text-decoration: none;
-  color: var(--dark-accent-color);
+  padding-top: 5px;
+  color: var(--tertiary-color);
 }
 
+footer a .material-symbols-outlined {
+  vertical-align: middle;
+}
+
+/* Style for the signup button */
+#signupbtn span.material-symbols-outlined {
+  color: var(--accent-color-minor);
+  font-size: 50px;
+  position: relative; /* Ensure the parent element is positioned */
+}
+
+#signupbtn span.material-symbols-outlined::after {
+  content: 'Signup'; /* Text to appear below the icon */
+  position: absolute;
+  top: calc(100% + 5px); /* Position below the icon */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  color: var(--tertiary-color);
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Kalam', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#signupbtn:hover span.material-symbols-outlined::after {
+  opacity: 1; /* Show the text on hover */
+}
+
+/* Define the animation, but only apply it when the element is hovered */
+.material-symbols-outlined:hover {
+  animation: pulse 3s infinite;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-size: 20px; /* Adjust the size as needed */
+  color: var(--accent-color-minor); /* Change the color to your desired color */
+}
+
+@keyframes pulse {
+  0% {
+    font-variation-settings: 'wght' 100;
+  }
+  50% {
+    font-variation-settings: 'wght' 700;
+  }
+  100% {
+    font-variation-settings: 'wght' 100;
+  }
+}
+
+/* Style for the home button */
+#homebtn span.material-symbols-outlined {
+  color: var(--accent-color-major);
+  font-size: 50px;
+  position: relative; /* Ensure the parent element is positioned */
+}
+
+#homebtn span.material-symbols-outlined::after {
+  content: 'Home'; /* Text to appear below the icon */
+  position: absolute;
+  top: calc(100% + 5px); /* Position below the icon */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  color: var(--tertiary-color);
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Kalam', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#homebtn:hover span.material-symbols-outlined::after {
+  opacity: 1; /* Show the text on hover */
+}
+
+/* Style for the dashboard button */
+#dashboardbtn span.material-symbols-outlined {
+  color: var(--accent-color-minor);
+  font-size: 50px;
+  position: relative; /* Ensure the parent element is positioned */
+}
+
+#dashboardbtn span.material-symbols-outlined::after {
+  content: 'Dashboard'; /* Text to appear below the icon */
+  position: absolute;
+  top: calc(100% + 5px); /* Position below the icon */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  color: var(--tertiary-color);
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Kalam', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#dashboardbtn:hover span.material-symbols-outlined::after {
+  opacity: 1; /* Show the text on hover */
+}
+
+/* Style for the login button */
+#loginbtn span.material-symbols-outlined {
+  color: var(--accent-color-major);
+  font-size: 50px;
+  position: relative; /* Ensure the parent element is positioned */
+}
+
+#loginbtn span.material-symbols-outlined::after {
+  content: 'Login'; /* Text to appear below the icon */
+  position: absolute;
+  top: calc(100% + 5px); /* Position below the icon */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  color: var(--tertiary-color);
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Kalam', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#loginbtn:hover span.material-symbols-outlined::after {
+  opacity: 1; /* Show the text on hover */
+}
+
+/* Style for the Post button */
+#postbtn span.material-symbols-outlined {
+  color: var(--accent-color-major);
+  font-size: 50px;
+  position: relative; /* Ensure the parent element is positioned */
+}
+
+#postbtn span.material-symbols-outlined::after {
+  content: 'Post'; /* Text to appear below the icon */
+  position: absolute;
+  top: calc(100% + 5px); /* Position below the icon */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  color: var(--tertiary-color);
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Kalam', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#postbtn:hover span.material-symbols-outlined::after {
+  opacity: 1; /* Show the text on hover */
+}
+
+/* Style for the Logout button */
+#logoutbtn span.material-symbols-outlined {
+  color: var(--accent-color-minor);
+  font-size: 50px;
+  position: relative; /* Ensure the parent element is positioned */
+}
+
+#logoutbtn span.material-symbols-outlined::after {
+  content: 'Logout'; /* Text to appear below the icon */
+  position: absolute;
+  top: calc(100% + 5px); /* Position below the icon */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  color: var(--tertiary-color);
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Kalam', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#logoutbtn:hover span.material-symbols-outlined::after {
+  opacity: 1; /* Show the text on hover */
+}
