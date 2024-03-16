@@ -2,6 +2,11 @@
   <div class='card-head'>
     <h3 class='card-title' id='{{post_id}}'>{{post_title}}</h3>
   </div>
+
+  <div class='card-body'>
+    {{post_content}}
+  </div>
+
   <div class='card-options'>
 
     <a href='/editpost/{{post_id}}'>
@@ -18,9 +23,6 @@
       delete
     </span>
 
-  </div>
-  <div class='card-body'>
-    {{post_content}}
   </div>
 </section>
 <script src='/js/index.js'></script>

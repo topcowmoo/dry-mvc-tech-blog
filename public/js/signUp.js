@@ -11,21 +11,14 @@ const registerHandler = async (event) => {
   const successMessage = document.querySelector('#register-success');
   const errorMessage = document.querySelector('#register-failed');
 
-  console.log('Email:', email); // Log email value
-  console.log('Username:', username); // Log username value
-  console.log('Password:', password); // Log password value
-
   // Fetch API to create a new user
   if (email && username && password) {
     try {
-      console.log('Making POST request to /api/users/signup'); // Log before making the request
       const response = await fetch('/api/users/signup', {
         method: 'POST',
         body: JSON.stringify({ email, username, password }),
         headers: { 'Content-Type': 'application/json' },
       });
-
-      console.log('Response:', response); // Log the response object
 
       if (response.ok) {
         // Display success message if user registration succeeds
@@ -38,8 +31,6 @@ const registerHandler = async (event) => {
       // Handle errors if fetch request fails
       console.error('Error:', error);
     }
-  } else {
-    console.log('Missing email, username, or password'); // Log if any field is missing
   }
 };
 

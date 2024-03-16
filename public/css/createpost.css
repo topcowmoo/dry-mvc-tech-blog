@@ -1,0 +1,85 @@
+/* Styling for creating new post or comment */
+.new-post-box {
+  max-width: 450px;
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 190px;
+  padding: 40px;
+  border: 2px solid var(--accent-color-minor);
+  border-radius: 9px;
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  text-align: center;
+}
+
+h2,
+h3 {
+  color: whitesmoke;
+  margin-top: 3%;
+  font-size: 28px;
+}
+
+#leave-comment {
+  font-size: 22px;
+}
+
+/* Styling for the forms */
+#new-post-form,
+#new-comment-form {
+  border: 3px solid var(--dark-blue);
+  /* background-color:  */
+  margin: 2%;
+}
+
+#new-post-form {
+  padding: 7%;
+}
+#new-comment-form {
+  padding: 2%;
+}
+#new-post-form label {
+  font-size: 24px;
+  color: whitesmoke;
+}
+#new-post-form .title {
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 1%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#new-post-form textarea,
+#new-comment-form textarea {
+  width: 100%;
+  padding: 2%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#new-post-form textarea {
+  height: 25%;
+  margin-bottom: 5%;
+}
+#new-comment-form textarea {
+  height: 10%;
+  margin-bottom: 2%;
+}
+
+/* styling applied to the comment button  */
+.submit-comment {
+  width: 10%;
+  padding: 1%;
+  margin-right: 45%;
+  margin-left: 45%;
+}
+
+.submit {
+  margin-left: 35%;
+  margin-top: 3%;
+  padding: 1%;
+  width: 30%;
+  border-radius: 9px;
+}
+
+footer {
+  position: fixed;
+}

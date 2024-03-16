@@ -1,0 +1,82 @@
+/* Styling for login box */
+.create-profile {
+  max-width: 450px;
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 190px;
+  padding: 40px;
+  border: 2px solid var(--tertiary-color);
+  border-radius: 9px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  text-align: center;
+}
+
+.form-element {
+  margin: 4% 4% 4% 4%;
+}
+
+.submit {
+  margin-left: 25%;
+  padding: 3%;
+  width: 50%;
+}
+
+/* Align input fields and buttons */
+.form-element input[type='text'],
+.form-element input[type='password'],
+.form-element input[type='email'],
+.form-element input[type='submit'] {
+  display: block; /* Aligns the input/button to the block (full width of the container) */
+  width: 70%; /* Sets a specific width of the input/button */
+  margin: 5px auto; /* Centers the input/button with automatic margins on the sides */
+  padding: 10px; /* Adjust padding as necessary */
+  background-color: white; /* Background color */
+}
+
+/* Styling for messages if register fails */
+.message {
+  margin: 3%;
+  text-align: center;
+}
+.register-failed {
+  color: whitesmoke;
+}
+.register-success {
+  color: whitesmoke;
+}
+
+/* Center text and form elements */
+.log-in-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit {
+  margin: 25px; /* Adjust as needed */
+  padding: 8px 15px; /* Adjust as needed */
+  width: 50%;
+  background-color: var(--accent-color-minor);
+  border: 2px solid var(--tertiary-color);
+  border-radius: 9px;
+}
+
+.form-element {
+  margin-bottom: 20px; /* Adjust as needed */
+  width: 100%;
+}
+
+.form-element label {
+  display: block;
+  margin-bottom: 5px; /* Adjust as needed */
+  text-align: left;
+  color: black;
+}
+
+.form-element input {
+  padding: 10px; /* Adjust as needed */
+  width: 100%;
+  border: 2px solid var(--tertiary-color);
+  border-radius: 9px;
+}

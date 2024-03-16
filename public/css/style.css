@@ -17,19 +17,26 @@ body {
   background-image: url(../images/Untitled-3.png);
   background-size: cover;
   background-attachment: fixed;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1000;
 }
 
 /* Navigation bar */
 .nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   background-color: #e3edf1;
-  padding: 1% 5%;
+  padding-left: 2%;
+  padding-right: 2%;
   justify-content: space-between;
   font-size: 20px;
   font-weight: 400;
-  margin: 0;
-  padding-left: 1%;
-  padding-right: 1%;
+  z-index: 1000;
 }
 
 .nav-bar ul {
@@ -43,7 +50,7 @@ body {
 }
 
 .nav-bar ul li {
-  margin: 4%;
+  margin: 2%;
 }
 
 .nav-bar ul li:hover {
@@ -57,28 +64,26 @@ body {
   padding: 2%;
   margin-left: 0%;
   background-color: var(--accent-color);
-  color: white;
+  color: var(--primary-color);
   border: none;
 }
 
 .submit:hover {
   cursor: pointer;
-  background-color: var(---secondary-color);
 }
 
 /* Footer */
 footer {
   position: fixed;
-  background-color: #e3edf1;
   bottom: 0;
   width: 100%;
-  color: var(--tertiary-color);
   text-align: left;
   display: flex;
   flex-direction: column;
-  padding-bottom: 1%;
-  padding-top: 2%;
-  padding-left: 1%;
+  padding-bottom: 0%;
+  padding-top: 1%;
+  padding-left: 2%;
+  background-color: #e3edf1;
 }
 
 footer h4 {
@@ -89,7 +94,6 @@ footer h4 {
 }
 
 footer a {
-  padding-top: 5px;
   color: var(--tertiary-color);
 }
 

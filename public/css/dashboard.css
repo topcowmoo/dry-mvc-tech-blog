@@ -1,0 +1,69 @@
+/* Global styles */
+.card-title:hover,
+.card-options p:hover {
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+/* Card styles */
+.card {
+  max-width: 750px;
+  height: auto;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  width: calc(33% - 20px); /* Adjust width as needed */
+  margin-bottom: 20px; /* Adjust margin between cards */
+  color: limegreen;
+}
+
+.card-body {
+  padding: 1%;
+}
+
+.card-head {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  color: var(--dark-accent-color);
+}
+
+.card-head h3 {
+  margin: 0;
+  font-size: 28px;
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.card-head p {
+  margin: 0;
+  padding-top: 0.5%;
+}
+
+.card-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.card-options p {
+  margin: 0;
+}
+
+.dashboard {
+  width: 86%;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 9%;
+  margin-bottom: 12%;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: space-evenly; /* Distribute items evenly along the main axis */
+  margin-top: 87px;
+}
