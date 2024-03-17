@@ -19,7 +19,7 @@ router.post('/signup', async (req, res) => {
       };
       await User.create(newUser);
 
-      res.status(200).json({ message: 'Successfully Signed up' });
+      res.redirect('/login');
     }
   } catch (err) {
     res.status(500).json({ error: 'Failed to signup' });
