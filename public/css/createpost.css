@@ -1,34 +1,37 @@
 /* Styling for creating new post or comment */
 .new-post-box {
-  max-width: 450px;
+  width: 500px;
+  height: 600px;
   margin: 0 auto; /* Center horizontally */
-  margin-top: 190px;
-  padding: 40px;
-  border: 2px solid var(--accent-color-minor);
+  margin-top: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 9px;
-  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(15px);
-  overflow: hidden;
+  overflow: auto;
   text-align: center;
+  color: var(--accent-color-minor);
+  padding: 20px;
+  justify-content: center;
 }
 
 h2,
 h3 {
-  color: whitesmoke;
+  color: purple;
   margin-top: 3%;
   font-size: 28px;
 }
 
 #leave-comment {
   font-size: 22px;
+  color: green;
 }
 
 /* Styling for the forms */
 #new-post-form,
 #new-comment-form {
   border: 3px solid var(--dark-blue);
-  /* background-color:  */
-  margin: 2%;
+  margin: 0 auto;
 }
 
 #new-post-form {
