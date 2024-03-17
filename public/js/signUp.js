@@ -14,7 +14,7 @@ const registerHandler = async (event) => {
   // Fetch API to create a new user
   if (email && username && password) {
     try {
-      const response = await fetch('/api/users/signup', {
+      const response = await fetch('/signup', {
         method: 'POST',
         body: JSON.stringify({ email, username, password }),
         headers: { 'Content-Type': 'application/json' },
