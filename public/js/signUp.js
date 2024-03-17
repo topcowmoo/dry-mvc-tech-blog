@@ -23,6 +23,7 @@ const registerHandler = async (event) => {
       if (response.ok) {
         // Display success message if user registration succeeds
         successMessage.style.display = 'block';
+        document.location.replace('/login');
       } else {
         // Display error message if registration fails
         errorMessage.style.display = 'block';
