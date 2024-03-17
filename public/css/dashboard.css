@@ -7,18 +7,17 @@
 
 /* Card styles */
 .card {
-  max-width: 750px;
-  height: auto;
+  width: 400px; /* Adjust the width as needed */
+  height: 300px;
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 9px;
   background-color: rgba(255, 255, 255, 0.25);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(15px);
-  overflow: hidden;
-  width: calc(33% - 20px); /* Adjust width as needed */
-  margin-bottom: 20px; /* Adjust margin between cards */
-  color: limegreen;
+  overflow: auto;
+  margin-bottom: 20px;
+  color: var(--accent-color-minor);
 }
 
 .card-body {
@@ -29,23 +28,25 @@
   display: flex;
   flex-direction: column;
   padding: 1%;
-  color: var(--dark-accent-color);
+  color: var(--accent-color-minor);
 }
 
 .card-head h3 {
   margin: 0;
   font-size: 28px;
   margin-bottom: 10px; /* Adjust as needed */
+  color: var(--accent-color-major);
 }
 
 .card-head p {
   margin: 0;
   padding-top: 0.5%;
+  color: var(--accent-color-major);
 }
 
 .card-options {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 10px; /* Adjust as needed */
 }
 
