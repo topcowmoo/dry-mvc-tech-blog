@@ -1,7 +1,8 @@
 /* Styling for creating new post or comment */
 .new-post-box {
-  width: 500px;
-  height: 625px;
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 500px; /* Maximum width */
+  height: auto; /* Automatically adjust height */
   margin: 0 auto; /* Center horizontally */
   margin-top: 150px;
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -25,7 +26,7 @@ h3 {
 #leave-comment {
   font-size: 22px;
   color: var(--accent-color-minor);
-  text-align: left;
+  text-align: center;
 }
 
 /* Styling for the forms */
@@ -33,6 +34,7 @@ h3 {
 #new-comment-form {
   margin: 0 auto;
   text-align: left;
+  width: 90%; /* Adjust width for smaller screens */
 }
 
 #new-post-form {
@@ -62,41 +64,66 @@ h3 {
   color: var(--accent-color-major);
 }
 #new-post-form textarea {
-  height: 25%;
+  height: 100px; /* Adjust height for smaller screens */
   margin-bottom: 5%;
 }
 #new-comment-form textarea {
-  height: 10%;
+  height: 80px; /* Adjust height for smaller screens */
   margin-bottom: 2%;
   color: black;
 }
 
 /* styling applied to the comment button  */
 .card {
-  width: 80%; /* Adjust width as needed */
+  width: 90%; /* Adjust width for smaller screens */
   margin: 0 auto; /* Center horizontally */
   margin-bottom: 10px;
 }
 
 /* styling applied to the comment button */
 .submit-comment {
-  width: 100px; /* Adjust width as needed */
-  padding: 1%;
-  margin: 0 auto; /* Center horizontally */
+  width: 50%; /* Adjust width for smaller screens */
+  padding: 10px 20px;
+  margin: 20px auto; /* Center horizontally */
 }
 
 .submit {
-  margin: 0 auto; /* Center the button horizontally */
-  margin-top: 20px; /* Adjust the top margin as needed */
-  padding: 10px 20px; /* Adjust padding as needed */
-  width: 50%;
-  display: block; /* Ensures the button takes up full width */
+  margin: 20px auto; /* Adjust as needed */
+  padding: 10px 20px; /* Adjust as needed */
   background-color: var(--accent-color-minor);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 9px;
+  width: 50%;
 }
-
 
 footer {
   position: fixed;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .new-post-box {
+    margin-top: 260px; /* Adjust top margin for smaller screens */
+  }
+  #new-post-form,
+  #new-comment-form {
+    width: 95%; /* Adjust width for smaller screens */
+  }
+  #new-post-form textarea {
+    height: 80px; /* Adjust height for smaller screens */
+  }
+  #new-comment-form textarea {
+    height: 60px; /* Adjust height for smaller screens */
+  }
+  .card,
+  .submit-comment,
+  .submit {
+    width: 95%; /* Adjust width for smaller screens */
+  }
+
+  .submit {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -56,3 +56,15 @@
 h2 {
   color: var(--accent-color-minor);
 }
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .log-in-card {
+    margin-top: 270px; /* Adjust top margin for smaller screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .submit {
+    width: 70%; /* Adjust width for smaller screens */
+  }
+}

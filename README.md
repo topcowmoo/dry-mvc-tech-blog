@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/topcowmoo/dry-mvc-tech-blog">
-    <img src="/public/images/logo.png" alt="Logo" width="300" height="225">
+    <img src="/public/images/logo1.png" alt="Logo" width="310" height="100">
   </a>
 
 <h3 align="center">Dry MVC Tech Blog</h3>
@@ -16,7 +16,7 @@
     <a href="https://github.com/topcowmoo/dry-mvc-tech-blog"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://dry-mvc-tech-blog-a7183e3866d2.herokuapp.com/">Deployed App on Heroku</a>
+    <a href="https://dry-mvc-tech-blog-4c17b43a0a35.herokuapp.com/">Deployed App on Heroku</a>
     ·
     <a href="https://github.com/topcowmoo/dry-mvc-tech-blog/issues">Report Bug</a>
     ·
@@ -51,50 +51,35 @@
 
 A CMS-style blog site that can publish articles, blog posts, thoughts and opinions.
 
-<!-- Creating and sourcing schema in database:
+Login Page:
 
-![image](https://github.com/topcowmoo/windy-e-commerce-site/assets/149528212/abe0121d-89d5-4a8e-b145-9864c3b958cf)
+![Screenshot 2024-03-17 at 1 57 32 PM](https://github.com/topcowmoo/dry-mvc-tech-blog/assets/149528212/85c67e3a-9009-4d60-b973-5866801a793e)
 
-Seeding the database:
+Signup Page:
 
-![image](https://github.com/topcowmoo/windy-e-commerce-site/assets/149528212/cd88f48e-be69-42a3-ac93-c43c4ed5d858)
+![Screenshot 2024-03-17 at 2 16 23 PM](https://github.com/topcowmoo/dry-mvc-tech-blog/assets/149528212/953101ed-7894-4f60-bd4b-4f8056eaec02)
 
-Server is started:
+Homepage:
 
-![image](https://github.com/topcowmoo/windy-e-commerce-site/assets/149528212/ce132cfb-6929-461f-bc2c-3188979e83d9)
+![Screenshot 2024-03-17 at 1 57 52 PM](https://github.com/topcowmoo/dry-mvc-tech-blog/assets/149528212/9fea9400-cad6-4e74-8cc0-2c586b5045d7)
 
-Example of a GET request of one Product in Insomnia:
+New Post Page:
 
-![image](https://github.com/topcowmoo/windy-e-commerce-site/assets/149528212/a9bf0575-9c40-4c40-9723-3116d62a9e06)
-
-Example of a PUT request to update a Category in Insomnia:
-
-![image](https://github.com/topcowmoo/windy-e-commerce-site/assets/149528212/b9c9542b-31ee-42b6-b8a1-3b32c83af094)
-
-Example of a DELETE request to delete a Tag by Id in Insomnia:
-
-![image](https://github.com/topcowmoo/windy-e-commerce-site/assets/149528212/f3fdd26d-914e-4bf5-9de7-7dbed13df622)
-
-Example of a POST request to create a new Tag in Insomnia:
-
-![image](https://github.com/topcowmoo/windy-e-commerce-site/assets/149528212/c2e26d6d-9cbf-429b-9edb-3c0684260906) -->
+![Screenshot 2024-03-17 at 1 58 54 PM](https://github.com/topcowmoo/dry-mvc-tech-blog/assets/149528212/2fc20f99-d705-45e4-bbf1-e6a3903ffd5b)
 
 <!-- BUILT WITH -->
 
 ## Built With
 
-<a href="HTML-url">
-  <span style="margin-right: 10px;"><img src="./public/images/javascript.png" alt="Alt text" width="45" height="45"></span>
-  <span style="margin-right: 10px;"><img src="./public/images/nodejs.png" alt="Alt text" width="45" height="45"></span>
-  <span style="margin-right: 10px;"><img src="./public/images/handlebars2.png" alt="Alt text" width="45" height="45"></span>
-  <span style="margin-right: 10px;"><img src="./public/images/sequelize.png" alt="Alt text" width="45" height="45"></span>
-  <span style="margin-right: 10px;"><img src="./public/images/mysql.png" alt="Alt text" width="45" height="45"></span>
-  <span style="margin-right: 10px;"><img src="./public/images/apps-insomnia.png" alt="Alt text" width="45" height="45"></span>
-  <span style="margin-right: 10px;"><img src="./public/images/heroku-original-wordmark.png" alt="Alt text" width="45" height="45"></span>
-  <span style="margin-right: 10px;"><img src="./public/images/eslint.png" alt="Alt text" width="45" height="45"></span>
-  <span><img src="./public/images/css-3.png" alt="Alt text" width="45" height="45"></span>
-</a>
-
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![NodeJS](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
+![Handlebars](https://img.shields.io/badge/Handlebars%20js-f0772b?style=for-the-badge&logo=handlebarsdotjs&logoColor=black)
+![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 
 <!-- INSTALLATION -->
 
@@ -149,7 +134,7 @@ Salvatore Mammoliti - [@github](https://github.com/topcowmoo) - mammoliti.sam@gm
 
 Project Link: [https://github.com/topcowmoo/dry-mvc-tech-blog](https://github.com/topcowmoo/dry-mvc-tech-blog)
 
-Deployed App on Heroku: [https://dry-mvc-tech-blog-a7183e3866d2.herokuapp.com/](https://dry-mvc-tech-blog-a7183e3866d2.herokuapp.com/)
+Deployed App on Heroku: [https://dry-mvc-tech-blog-4c17b43a0a35.herokuapp.com/](https://dry-mvc-tech-blog-4c17b43a0a35.herokuapp.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,6 +142,7 @@ Deployed App on Heroku: [https://dry-mvc-tech-blog-a7183e3866d2.herokuapp.com/](
 
 ## Acknowledgments
 
+- [Pair Programing with Sahil Banati](https://github.com/sbanati)
 - [Sequelize](https://sequelize.org/)
 - [MySQL](https://www.mysql.com/)
 - [ChatGPT](https://chat.openai.com/)
@@ -165,7 +151,6 @@ Deployed App on Heroku: [https://dry-mvc-tech-blog-a7183e3866d2.herokuapp.com/](
 - [Best README Template](https://github.com/othneildrew/Best-README-Template)
 - [Iconduck](https://iconduck.com/)
 - [Shields.io](https://shields.io/)
-- [Color Hex](https://www.color-hex.com/color-palette/74932) - Color Palette by Bdiazrodriguez
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

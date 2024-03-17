@@ -1,78 +1,79 @@
 /* Styling for login box */
 .create-profile {
-  max-width: 450px;
-  margin: 0 auto; /* Center horizontally */
-  margin-top: 190px;
-  padding: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 9px;
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(15px);
-  overflow: hidden;
-  text-align: center;
-  color: var(--accent-color-minor);
+    max-width: 450px;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 190px;
+    padding: 25px;
+    border: none; /* Remove border */
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    text-align: center; /* Align text to the center */
+    color: var(--accent-color-minor);
+    border-radius: 15px; /* Make box rounded */
 }
 
 .submit {
-  margin-left: 25%;
-  padding: 3%;
-  width: 50%;
+    margin: 20px auto; /* Center the button */
+    padding: 10px 20px; /* Adjust as needed */
+    width: 50%;
+    background-color: var(--accent-color-minor);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 9px;
 }
 
-/* Align input fields and buttons */
+/* Align input fields to the left */
 .form-element input[type='text'],
 .form-element input[type='password'],
-.form-element input[type='email'],
-.form-element input[type='submit'] {
-  display: block; /* Aligns the input/button to the block (full width of the container) */
-  width: 90%; /* Sets a wider width for the input fields */
-  margin: 5px auto; /* Centers the input fields with automatic margins on the sides */
-  padding: 10px; /* Adjust padding as necessary */
-  background-color: white; /* Background color */
+.form-element input[type='email'] {
+    display: block;
+    width: 90%;
+    margin: 5px auto; /* Centers the input fields with automatic margins on the sides */
+    padding: 10px; /* Adjust padding as necessary */
+    background-color: white; /* Background color */
+    border: 2px solid var(--tertiary-color);
+    border-radius: 9px; /* Make input fields rounded */
+    text-align: left; /* Align text to the left */
+}
+
+/* Align text "username", "email", "password" to the left */
+.form-element label {
+    display: block;
+    margin-bottom: 5px; /* Adjust as needed */
+    text-align: left; /* Align text to the left */
+    color: var(--accent-color-minor);
 }
 
 /* Styling for messages if register fails */
 .message {
-  margin: 3%;
-  text-align: center;
+    margin: 3%;
+    text-align: center;
 }
+
 .register-failed {
-  color: var(--accent-color-minor);
+    color: var(--accent-color-minor);
 }
 
 .register-success {
-  color: var(--accent-color-minor);
+    color: var(--accent-color-minor);
 }
 
-/* Center text and form elements */
+/* Center form elements vertically */
 .log-in-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.submit {
-  margin: 20px; /* Adjust as needed */
-  padding: 10px 20px; /* Adjust as needed */
-  width: 50%;
-  background-color: var(--accent-color-minor);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.form-element {
-  width: 100%;
-}
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .create-profile {
+        margin-top: 270px; /* Adjust top margin for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
 
-.form-element label {
-  display: block;
-  margin-bottom: 5px; /* Adjust as needed */
-  text-align: left;
-  color: var(--accent-color-minor);
-}
-
-.form-element input {
-  padding: 10px; /* Adjust as needed */
-  width: 100%;
-  border: 2px solid var(--tertiary-color);
-  border-radius: 9px;
+    .submit {
+        margin-left: 0;
+        width: 90%; /* Adjust width for smaller screens */
+    }
 }

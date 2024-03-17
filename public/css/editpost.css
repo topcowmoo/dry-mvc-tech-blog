@@ -1,7 +1,8 @@
 /* Styling for editing post or comment */
 .edit-post-box {
-  width: 500px;
-  height: 550px;
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 500px; /* Maximum width */
+  height: auto; /* Automatically adjust height */
   margin: 0 auto; /* Center horizontally */
   margin-top: 150px;
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -45,7 +46,7 @@
   color: var(--accent-color-minor);
 }
 #edit-post-form textarea {
-  height: 25%;
+  height: 100px; /* Adjust height for smaller screens */
   margin-bottom: 5%;
 }
 
@@ -69,4 +70,28 @@ h2 {
   margin-top: 3%;
   font-size: 28px;
   text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .edit-post-box {
+    margin-top: 275px; /* Adjust top margin for smaller screens */
+  }
+
+  #edit-post-form,
+  #edit-comment-form {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  #edit-post-form textarea {
+    height: 80px; /* Adjust height for smaller screens */
+  }
+
+  .submit {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  h2 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
 }
