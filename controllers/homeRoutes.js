@@ -54,7 +54,7 @@ router.get('/login', (req, res) => {
 // GET route for signup page
 router.get('/signup', (req, res) => {
   try {
-    res.render('signup');
+    res.render('signUp');
   } catch (err) {
     res.status(500).json({ error: 'Internal Server Error' });
   }
