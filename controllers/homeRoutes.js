@@ -56,7 +56,6 @@ router.get('/signup', (req, res) => {
   try {
     res.render('signup');
   } catch (err) {
-    console.error('Error rendering signup view:', err);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
