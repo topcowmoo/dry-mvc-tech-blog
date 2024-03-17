@@ -3,17 +3,14 @@
   max-width: 450px;
   margin: 0 auto; /* Center horizontally */
   margin-top: 190px;
-  padding: 40px;
-  border: 2px solid var(--tertiary-color);
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 9px;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(15px);
   overflow: hidden;
   text-align: center;
-}
-
-.form-element {
-  margin: 4% 4% 4% 4%;
+  color: var(--accent-color-minor);
 }
 
 .submit {
@@ -28,8 +25,8 @@
 .form-element input[type='email'],
 .form-element input[type='submit'] {
   display: block; /* Aligns the input/button to the block (full width of the container) */
-  width: 70%; /* Sets a specific width of the input/button */
-  margin: 5px auto; /* Centers the input/button with automatic margins on the sides */
+  width: 90%; /* Sets a wider width for the input fields */
+  margin: 5px auto; /* Centers the input fields with automatic margins on the sides */
   padding: 10px; /* Adjust padding as necessary */
   background-color: white; /* Background color */
 }
@@ -40,10 +37,11 @@
   text-align: center;
 }
 .register-failed {
-  color: whitesmoke;
+  color: var(--accent-color-minor);
 }
+
 .register-success {
-  color: whitesmoke;
+  color: var(--accent-color-minor);
 }
 
 /* Center text and form elements */
@@ -52,18 +50,16 @@
   flex-direction: column;
   align-items: center;
 }
-
 .submit {
-  margin: 25px; /* Adjust as needed */
-  padding: 8px 15px; /* Adjust as needed */
+  margin: 20px; /* Adjust as needed */
+  padding: 10px 20px; /* Adjust as needed */
   width: 50%;
   background-color: var(--accent-color-minor);
-  border: 2px solid var(--tertiary-color);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 9px;
 }
 
 .form-element {
-  margin-bottom: 20px; /* Adjust as needed */
   width: 100%;
 }
 
@@ -71,7 +67,7 @@
   display: block;
   margin-bottom: 5px; /* Adjust as needed */
   text-align: left;
-  color: black;
+  color: var(--accent-color-minor);
 }
 
 .form-element input {

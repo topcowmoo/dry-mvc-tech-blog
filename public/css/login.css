@@ -4,16 +4,13 @@
   margin: 0 auto; /* Center horizontally */
   margin-top: 190px;
   padding: 40px;
-  border: 2px solid var(--tertiary-color);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 9px;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(15px);
   overflow: hidden;
   text-align: center;
 }
-
-/* MAKE THE BORDER OF THE USERNAME AND PASSWORD INPUTS TERTIARY col
-FIX THE SHAWDOW WITH THE NEW BORDER 2PX SOLID VAR--TERTIARY-COLOR */
 
 /* Center text and form elements */
 .log-in-content {
@@ -23,10 +20,12 @@ FIX THE SHAWDOW WITH THE NEW BORDER 2PX SOLID VAR--TERTIARY-COLOR */
 }
 
 .submit {
-  margin-top: 20px; /* Adjust as needed */
+  margin: 20px; /* Adjust as needed */
   padding: 10px 20px; /* Adjust as needed */
   width: 50%;
   background-color: var(--accent-color-minor);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 9px;
 }
 
 .form-element {
@@ -38,7 +37,7 @@ FIX THE SHAWDOW WITH THE NEW BORDER 2PX SOLID VAR--TERTIARY-COLOR */
   display: block;
   margin-bottom: 5px; /* Adjust as needed */
   text-align: left;
-  color: black;
+  color: var(--accent-color-minor);
 }
 
 .form-element input {
@@ -52,4 +51,8 @@ FIX THE SHAWDOW WITH THE NEW BORDER 2PX SOLID VAR--TERTIARY-COLOR */
 .message {
   margin: 4%;
   text-align: center;
+}
+
+h2 {
+  color: var(--accent-color-minor);
 }

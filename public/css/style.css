@@ -23,6 +23,9 @@ body {
   z-index: 1000;
 }
 
+p {
+  color: var(--accent-color-minor);
+}
 
 /* Navigation bar */
 .nav-bar {
