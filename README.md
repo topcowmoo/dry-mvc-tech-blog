@@ -16,7 +16,7 @@
     <a href="https://github.com/topcowmoo/dry-mvc-tech-blog"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://dry-mvc-tech-blog-4c17b43a0a35.herokuapp.com/">Deployed App on Heroku</a>
+    <a href="https://dry-mvc-tech-blog-b103946e224c.herokuapp.com/">Deployed App on Heroku</a>
     ·
     <a href="https://github.com/topcowmoo/dry-mvc-tech-blog/issues">Report Bug</a>
     ·
@@ -134,7 +134,7 @@ Salvatore Mammoliti - [@github](https://github.com/topcowmoo) - mammoliti.sam@gm
 
 Project Link: [https://github.com/topcowmoo/dry-mvc-tech-blog](https://github.com/topcowmoo/dry-mvc-tech-blog)
 
-Deployed App on Heroku: [https://dry-mvc-tech-blog-4c17b43a0a35.herokuapp.com/](https://dry-mvc-tech-blog-4c17b43a0a35.herokuapp.com/)
+Deployed App on Heroku: [https://dry-mvc-tech-blog-b103946e224c.herokuapp.com/](https://dry-mvc-tech-blog-b103946e224c.herokuapp.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
