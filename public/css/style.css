@@ -289,3 +289,21 @@ footer a .material-symbols-outlined {
 #logoutbtn:hover span.material-symbols-outlined::after {
   opacity: 1; /* Show the text on hover */
 }
+
+.beat {
+  display: inline-block;
+  animation: pulse 2.0s infinite; /* Adding infinite iteration */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
